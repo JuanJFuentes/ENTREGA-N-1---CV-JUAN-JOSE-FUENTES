@@ -1,0 +1,103 @@
+
+body {
+    background: #885973;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+     width: 270px;
+    height: 30px;
+    background: #90d7d2;
+    width: 100%;
+    clear :both;
+    content: ' ';
+    display: table;
+}
+
+.menu {
+
+    width: 1200px;
+    height: 0px;
+    margin: auto;
+
+}
+
+img {
+    float: left;
+    padding: 8px;
+}
+
+.BarraNav {
+    float: right;
+}
+
+.BarraNav ul li {
+    list-style:none;
+    margin-left: 75px;
+    padding: 5px;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration:none;
+    color: #FFFF;
+    font-weight: bold;
+}
+
+/**  Aqui busque un tutorial de como realizar un efecto al posicionar el cursor sobre cada list item */
+
+nav ul li a::before {
+    display: block;
+    content: ' ';
+    width: 0%;
+    background: #FFFF;
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition: width 0.5s
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+.primus {
+    width: 105;
+    height: 45px;
+}
+fieldset {
+    margin-bottom: 12px;
+}
+/** Agregue color de fondo al legend para resaltar del resto del cv */
+legend {
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+footer {
+    max-width: 100%;
+    background: #000;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 0 0 20px 20px;
+    color: #FFFF;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box ;
+    font-family: fantasy;
+}
+
+.mi_texto {
+
+    color:#5f364c
+}
+
+
+
+
+
+

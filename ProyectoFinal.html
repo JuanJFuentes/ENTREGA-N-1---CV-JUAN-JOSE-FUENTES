@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoFinalIntegrador</title>
+    <link rel="stylesheet" href="estilosPF.css/estiloscv.css"/>
+    <link rel="stylesheet" href="estilosPF.css/curriculum.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-rHo7v1ZZIaFLlKQOEXYKuVjHISX+gOgJf37FpXc3mI3zE3vPJEm0nJ6NLcKR6U2A" crossorigin="anonymous">   
+</head>
+
+<!-- decidi incluir un contenedor superior, para que cumpla la funcion de barra de busqueda. Allì inclui 3 
+item list para que dirijan al usuario directamente al inicio del CV y a otra seccion con los datos de experiencia laboral y en un 3er
+item ,se me hizo interesante, incluir mi perfil de LinkdIn, para poder darle mas uso a la barra y a la funcion div 
+-->
+
+<body>
+
+    
+    <header>
+
+
+        <div class="menu">
+            
+           <!-- Tambien sume un logo (que recorte yo) mediante un div y class tanto de la academia Ticmas como del curso Argentina Programa 4.0-->
+            <img src="logo.png" class="primus" alt="">
+            <nav class="BarraNav">
+                <ul>
+                    <li><a href="#Nombre de CV">CV</a></li>
+                    <li><a href="#Experiencia Laboral">Experiencia Laboral</a></li>
+                    <li><a href="https://www.linkedin.com/in/juan-jos%C3%A9-fuentes-44b196148/">Mi perfil LinkdIn</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    
+    <div class="curriculum">
+        <img src="https://randomuser.me/api/portraits/men/40.jpg" class="img" alt="imagen de perfil">
+        <!-- 
+         según la consigna inclui los datos de randomuser.me de un solo perfil ,tambien pense realizar una solicitud con un fetch y 
+         generar datos en formato .json pero, la api solo brinda datos personales , y no de experiencia laboral, ni formacion academica , 
+         ni otros datos importantes para un CV; es por eso que solo tome los campos brindados en -datos generales por randomuser.me -->
+
+        <h1 id="Nombre de CV">Brad Simmmons</h1>
+        <p> 8392 College St</p>
+        <p>Telefono: (724) 277-6281</p>
+        <fieldset>
+            <legend> Datos Generales</legend>
+            <ul>
+                <li>7/5/1977</li>
+                <li>brad.simmmons@example.com</li>
+                <li>DNI: 32.127.675 </li>
+            </ul>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend> Aptitudes</legend>
+            <ul>
+                <li>Creatividad.</li>
+                <li>Resolución de problemas.</li>
+                <li>Adaptabilidad.</li>
+                <li>Competencias digitales.</li>
+                <li>Organización.</li>
+                <li>Liderazgo.</li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend> Formacion Academica</legend>
+            <ul>
+                <li> Educación musical - Facultad de Bellas Artes - Universidad de Boston </li>
+                <li>Medios impresos y fotografía - Instituto tecnologico de California</li>
+            </ul>
+        </fieldset>
+        <!--
+        En este fieldset agrege datos de relleno , la idea es incluir datos de experiencia laboral extendida , es decir tareas realizadas especificamente
+        en cada trabajo , en las cuales se pueda explayar la persona , y a su vez alargar mas los parrafos del cv y a si poder utilizar el
+        link ancla (experiencia laboral) y llevar al usuario mas abajo en la pagina a la seccion Datos de Importancia
+        -->
+        <fieldset>
+            <legend id="Experiencia Laboral"> Experiencia Laboral</legend>
+            <ul>
+                <li>Editor en revista de arte Magenta: Eh realiado trabajos como editor en jefe en la revista, supervisando y curando contenido visual y escrito
+                    relacionado con temas de arte, diseño y fotografía. En esta posición, tuve la responsabilidad de
+                    dirigir al equipo editorial para asegurar que la revista se produzca a tiempo y dentro del presupuesto pactado , logrando consesiones para cubrir
+                    eventos de relevancia en la zona</li>
+
+                <li>Fotógrafo musical en Relix Magazine: Desempeñando tareas como fotógrafo principal para la revista especializada en música. En este trabajo, me dedique a la
+                     tarea y responsabilidad de capturar imágenes de músicos y bandas en vivo, así como de realizar sesiones de fotos en estudio para portadas de álbumes y promociones de conciertos. 
+                     En esta seccion cabe mencionar mis habilidades en la edición de fotos y conocimientos en el uso de equipos de fotografía profesional..</li>
+
+                <li>Diseñador gráfico de Editorial Rudolf Steiner: Desempeñe tareas como diseñador gráfico en esta editorial de libros de arte, formando parte del equipo de impresión y posproducción.
+                    Creando portadas de libros, diseños de interiores y diagramas de imágenes. En este puesto tuve la responsabilidad de trabajar en colaboración con los editores y 
+                    los autores para crear diseños que resalten las imágenes y el contenido del libro. Asistí a diferentes capacitaciones sobre encuadernacion y 
+                    conocimientos en las tendencias actuales en la publicación de libros.</li>
+            </ul>
+        </fieldset>
+
+    </div>
+    <footer>
+
+        <!--
+        Agregue un pie de pagina intentando emular los que se ven en la mayoria de paginas web utilizando un footer 
+        donde inclui mi nombre, un link a mi perfild de GitHub y por ultimo , para cumplir con la ultima consigna donde solicitan
+         utilice un elemento que le de comportamiento a la pagina, mediante un boton que realiza un cambio de color y muestra una alerta
+        -->
+        <p>© 2023 Juan Fuentes</p>
+        <p>Visita mi perfil de <a href="https://github.com/JuanJFuentes"><i class="fas fa-rocket"></i> GitHub</a></p>
+        <p> Color <span id="mi-texto">Rojo</span></p>
+        <button onclick="cambiarColor()">Cambiar color</button>
+
+      </footer>      
+      
+    <script src="PF.js/cv.js"></script>
+</body>
+</html>
